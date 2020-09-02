@@ -1,0 +1,52 @@
+.grid {
+    border: 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+    height: 520px;
+    width: 360px;
+}
+
+.grid div {
+    height: 40px;
+    width: 40px;
+}
+
+.ending-block {
+    background-image: url(nest.svg);
+}
+
+.starting-block {
+  background-image: url(tree.svg);
+}
+
+.c1 {
+  background-image: url(car.png);
+  }
+
+.car-left {
+    background-image: url(car.svg);
+    }
+.car-right {
+      background-image: url(truck.svg);
+      }
+
+  
+  .l1, .l2, .l3 {
+    background-image: url(logs.svg);
+  }
+  
+  .l4, .l5, .lf2, .lf3 {
+    background-image: url(water.svg);
+  }
+  
+  .c2, .c3 {
+    background-image: url(asphalt.png);
+  }
+
+  .grass-block {
+    background-image: url(grass.png);
+  }
+
+.frog {
+    background-image: url(eagle.svg);
+}
