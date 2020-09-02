@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //Move the frog when it's on the log moving left
     function moveWithLogLeft() {
-        if(currentIndex >= 27 && currentIndex < 35) {
+        if(currentIndex >= 27 && currentIndex < 35 || currentIndex > 80 && currentIndex <= 89) {
             squares[currentIndex].classList.remove('frog')
             currentIndex += 1
             squares[currentIndex].classList.add('frog')
@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //Move the frog when it's on the log moving right
     function moveWithLogRight() {
-        if(currentIndex > 18 && currentIndex <= 26) {
+        if(currentIndex > 18 && currentIndex <= 26 || currentIndex > 71 && currentIndex <= 80) {
             squares[currentIndex].classList.remove('frog')
             currentIndex -= 1
             squares[currentIndex].classList.add('frog')
@@ -195,6 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
         moveWithLogLeft()
         moveWithLogRight()
         lose()
+        console.log(currentIndex)
     }
 
     //To Start and Pause The Game
